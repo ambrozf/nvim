@@ -43,7 +43,7 @@ local function get_jdtls()
   -- Obtain the path to configuration files for your specific operating system
   local config = jdtls_path .. "/config_" .. SYSTEM
   -- Obtain the path to the Lomboc jar
-  local lombok = "/Users/ambroz_f/.config/nvim/lombok/lombok.jar"
+  local lombok = vim.fn.stdpath("config") .. "/lombok/lombok.jar"
 
   return launcher, config, lombok
 end
