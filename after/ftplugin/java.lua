@@ -279,7 +279,6 @@ local config = {
   on_attach = on_attach,
 }
 
-print(cmd)
 require("jdtls").start_or_attach(config)
 
 local wk = require("which-key")

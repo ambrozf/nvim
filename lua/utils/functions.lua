@@ -187,7 +187,7 @@ function M.load_user_config()
   local config_file = home .. M.path_separator() .. ".nvim_config.lua"
   local ok, err = pcall(dofile, config_file)
   if not ok then
-    M.notify("Can not load user config: " .. err, vim.log.levels.INFO, "utils")
+    --M.notify("Can not load user config: " .. err, vim.log.levels.INFO, "utils")
     return {}
   else
     return dofile(config_file)

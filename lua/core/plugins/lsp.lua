@@ -29,7 +29,7 @@ return {
         opts = {
           handlers = {
             ["jdtls"] = function()
-              --require("lspconfig").jdtls.setup() -- Add this line for using the wrapped jdtls.setup
+              require("lspconfig").jdtls.setup() -- Add this line for using the wrapped jdtls.setup
             end,
           },
         },
